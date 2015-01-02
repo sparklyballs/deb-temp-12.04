@@ -17,8 +17,7 @@ mkdir -p /root/advancestore
 ADD src/sparkly-kodi-headless_20150102.0272aff-1_amd64.deb  /root/kodi.deb
 ADD src/advancedsettings.xml /advancestore/
 ADD src/firstrun.sh /root/firstrun.sh
-RUN chmod +x /etc/service/xbmc/run && \
-chmod +x /root/firstrun.sh && \
+RUN chmod +x /root/firstrun.sh && \
 apt-get update && \
 apt-get install -y software-properties-common python-software-properties && \
 add-apt-repository ppa:team-xbmc/ppa && \
