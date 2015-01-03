@@ -7,7 +7,7 @@ ENV HOME /root
 
 
 # Install Dependencies ,add startup files and debfile
-mkdir -p /root/advancestore
+RUN mkdir -p /root/advancestore
 ADD src/sparkly-kodi-headless_20150102.0272aff-1_amd64.deb  /root/kodi.deb
 ADD src/advancedsettings.xml /advancestore/
 ADD src/firstrun.sh /root/firstrun.sh
