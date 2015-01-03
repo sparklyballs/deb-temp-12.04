@@ -32,7 +32,7 @@ make && \
 make install && \
 apt-get purge --remove -y wget cmake build-essential software-properties-common python-software-properties && \
 apt-get autoremove -y && \ 
-apt-get clean
+apt-get clean && \
 
 # Install deb file and set permissions for files etc..
 cd /root && \
